@@ -7,134 +7,140 @@
 <meta name="description" content="BP Mechanical, LLC is a woman-owned commercial and industrial mechanical contractor in Gilbert, Arizona. HVAC, process piping, new construction, retrofit, and preventive maintenance by factory-certified technicians. ROC# 295114CR-39." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
 <style>
   :root{
-    --navy:#0b2438; --navy-2:#10314c; --steel:#1c5a8a; --blue:#2b7fc0;
-    --accent:#e0741f; --accent-2:#f59331;
-    --ink:#14222e; --body:#3f5161; --muted:#6b7b89;
+    --navy:#0b2438; --navy-2:#10314c; --steel:#1c5a8a;
+    --primary:#15517f; --primary-dk:#113f63;
+    --accent:#e0741f; --accent-2:#f59331;          /* decorative only — never behind text */
+    --ink:#14222e; --body:#37475a; --muted:#5a6572;
     --line:#e3e9ef; --bg:#ffffff; --bg-soft:#f5f8fa;
     --shadow:0 10px 30px rgba(11,36,56,.08);
     --shadow-lg:0 24px 60px rgba(11,36,56,.16);
     --radius:14px;
+    /* type scale — 6 steps, ~1.25 ratio */
+    --t-label:0.8125rem; --t-body:1.0625rem; --t-lead:1.33rem;
+    --t-h3:1.66rem; --t-h2:2.07rem; --t-h1:2.59rem;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
-  body{font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--body);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased}
-  h1,h2,h3,h4{font-family:'Space Grotesk','Inter',sans-serif;color:var(--ink);line-height:1.15;font-weight:600}
+  body{font-family:'IBM Plex Sans',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;font-size:var(--t-body);color:var(--body);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,h4{font-family:'Archivo','IBM Plex Sans',sans-serif;color:var(--ink);line-height:1.14;font-weight:700;letter-spacing:-.01em}
+  h1{font-size:var(--t-h1)} h2{font-size:var(--t-h2)} h3{font-size:var(--t-h3)}
   a{color:inherit;text-decoration:none}
   img{max-width:100%}
   .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
-  .eyebrow{font-family:'Space Grotesk',sans-serif;text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:600;color:var(--accent)}
-  .btn{display:inline-flex;align-items:center;gap:.55rem;font-weight:600;font-size:.97rem;padding:.85rem 1.5rem;border-radius:10px;border:1.5px solid transparent;cursor:pointer;transition:.18s;font-family:'Inter',sans-serif}
-  .btn-primary{background:var(--accent);color:#fff;box-shadow:0 8px 20px rgba(224,116,31,.28)}
-  .btn-primary:hover{background:var(--accent-2);transform:translateY(-2px)}
-  .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}
-  .btn-ghost:hover{background:rgba(255,255,255,.1);border-color:#fff}
+  .eyebrow{font-family:'Archivo',sans-serif;text-transform:uppercase;letter-spacing:.12em;font-size:var(--t-label);font-weight:700;color:var(--steel)}
+  .btn{display:inline-flex;align-items:center;gap:.55rem;font-weight:600;font-size:var(--t-body);padding:.8rem 1.5rem;border-radius:10px;border:1.5px solid transparent;cursor:pointer;transition:.18s;font-family:inherit}
+  .btn-primary{background:var(--primary);color:#fff;box-shadow:0 8px 20px rgba(21,81,127,.22)}
+  .btn-primary:hover{background:var(--primary-dk);transform:translateY(-2px)}
+  .btn-light{background:#fff;color:var(--navy)}
+  .btn-light:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+  .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
+  .btn-ghost:hover{background:rgba(255,255,255,.12);border-color:#fff}
   .btn-dark{background:var(--navy);color:#fff}
   .btn-dark:hover{background:var(--navy-2);transform:translateY(-2px)}
 
   /* ---------- Header ---------- */
-  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
   .nav{display:flex;align-items:center;justify-content:space-between;height:74px}
-  .brand{display:flex;align-items:center;gap:.7rem;font-family:'Space Grotesk',sans-serif;font-weight:700;color:var(--ink);font-size:1.18rem;letter-spacing:.01em}
-  .mark{width:42px;height:42px;border-radius:9px;background:linear-gradient(150deg,var(--navy),var(--steel));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:1rem;position:relative;overflow:hidden}
+  .brand{display:flex;align-items:center;gap:.7rem;font-family:'Archivo',sans-serif;font-weight:800;color:var(--ink);font-size:var(--t-lead);letter-spacing:0}
+  .mark{width:44px;height:44px;border-radius:9px;background:var(--navy);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:var(--t-body);position:relative;overflow:hidden}
   .mark::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:5px;background:var(--accent)}
-  .brand small{display:block;font-family:'Inter',sans-serif;font-weight:500;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
   .nav-links{display:flex;align-items:center;gap:2rem}
-  .nav-links a{font-size:.95rem;font-weight:500;color:var(--ink);transition:.15s}
-  .nav-links a:hover{color:var(--accent)}
+  .nav-links a{font-size:var(--t-body);font-weight:500;color:var(--ink);transition:.15s}
+  .nav-links a:hover{color:var(--primary)}
   .nav-cta{display:flex;align-items:center;gap:1.2rem}
-  .phone-link{font-family:'Space Grotesk',sans-serif;font-weight:600;color:var(--navy);font-size:1rem}
+  .phone-link{font-family:'Archivo',sans-serif;font-weight:700;color:var(--navy);font-size:var(--t-body)}
   .menu-btn{display:none;background:none;border:0;cursor:pointer;flex-direction:column;gap:5px}
   .menu-btn span{width:26px;height:2.5px;background:var(--ink);border-radius:2px;transition:.2s}
 
   /* ---------- Hero ---------- */
   .hero{position:relative;background:var(--navy);color:#fff;overflow:hidden}
   .hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:46px 46px;opacity:.6}
-  .hero::after{content:"";position:absolute;right:-10%;top:-30%;width:55%;height:160%;background:radial-gradient(circle,rgba(43,127,192,.35),transparent 62%)}
+  .hero::after{content:"";position:absolute;right:-10%;top:-30%;width:55%;height:160%;background:radial-gradient(circle,rgba(43,127,192,.32),transparent 62%)}
   .hero-inner{position:relative;z-index:2;padding:92px 0 104px;max-width:760px}
-  .hero h1{color:#fff;font-size:clamp(2.3rem,5vw,3.6rem);letter-spacing:-.01em;margin:1.1rem 0}
+  .hero h1{color:#fff;font-size:clamp(2.4rem,5vw,3.4rem);margin-bottom:1.3rem}
   .hero h1 span{color:var(--accent-2)}
-  .hero p.lead{font-size:1.18rem;color:#c5d6e6;max-width:620px;margin-bottom:2rem}
+  .hero p.lead{font-size:var(--t-lead);color:#c9d8e6;max-width:620px;margin-bottom:2rem}
   .hero-actions{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2.6rem}
   .hero-chips{display:flex;gap:.7rem;flex-wrap:wrap}
-  .chip{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);padding:.5rem .9rem;border-radius:999px;font-size:.85rem;color:#dfeaf3;font-weight:500}
-  .chip svg{flex:none}
+  .chip{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);padding:.5rem .95rem;border-radius:999px;font-size:var(--t-label);color:#e3eef6;font-weight:500}
+  .chip i{width:7px;height:7px;border-radius:50%;background:var(--accent-2);flex:none}
 
   /* ---------- Trust strip ---------- */
   .trust{background:var(--bg-soft);border-bottom:1px solid var(--line)}
   .trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;padding:34px 24px}
-  .trust-item{display:flex;flex-direction:column;gap:.15rem}
-  .trust-item b{font-family:'Space Grotesk',sans-serif;font-size:1.5rem;color:var(--ink)}
-  .trust-item span{font-size:.9rem;color:var(--muted)}
+  .trust-item b{display:block;font-family:'Archivo',sans-serif;font-size:var(--t-h3);color:var(--ink);line-height:1.1;margin-bottom:.2rem}
+  .trust-item span{font-size:var(--t-label);color:var(--muted)}
 
   /* ---------- Sections ---------- */
   section{padding:88px 0}
   .section-head{max-width:680px;margin-bottom:3rem}
-  .section-head h2{font-size:clamp(1.8rem,3.6vw,2.5rem);margin:.7rem 0 .9rem}
-  .section-head p{font-size:1.08rem;color:var(--body)}
+  .section-head h2{margin:.7rem 0 .9rem}
+  .section-head p{font-size:var(--t-lead);color:var(--body)}
   .alt{background:var(--bg-soft)}
 
   /* About */
   .about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:3.5rem;align-items:center}
-  .about-grid p{margin-bottom:1.1rem;font-size:1.05rem}
+  .about-grid p{margin-bottom:1.1rem}
   .about-card{background:var(--navy);color:#fff;border-radius:var(--radius);padding:2.4rem;position:relative;overflow:hidden;box-shadow:var(--shadow-lg)}
   .about-card::after{content:"";position:absolute;left:0;top:0;width:6px;height:100%;background:var(--accent)}
-  .about-card h3{color:#fff;font-size:1.25rem;margin-bottom:1.2rem}
+  .about-card h3{color:#fff;margin-bottom:1.3rem}
   .about-list{list-style:none;display:flex;flex-direction:column;gap:1rem}
-  .about-list li{display:flex;gap:.85rem;align-items:flex-start;color:#cfddea;font-size:.98rem}
-  .about-list svg{flex:none;margin-top:3px}
+  .about-list li{display:flex;gap:.85rem;align-items:flex-start;color:#d5e1ec;font-size:var(--t-body)}
+  .about-list svg{flex:none;margin-top:4px}
 
-  /* Services */
+  /* Services — icon beside title (no tile-above-heading) */
   .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-  .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:2rem 1.8rem;transition:.2s;box-shadow:var(--shadow)}
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.9rem 1.8rem;transition:.2s;box-shadow:var(--shadow)}
   .card:hover{transform:translateY(-5px);border-color:#cfe0ee;box-shadow:var(--shadow-lg)}
-  .card .ico{width:52px;height:52px;border-radius:12px;background:linear-gradient(150deg,#eaf3fa,#d7e9f6);display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem;color:var(--steel)}
-  .card h3{font-size:1.18rem;margin-bottom:.55rem}
-  .card p{font-size:.96rem;color:var(--body)}
+  .card-top{display:flex;align-items:center;gap:.85rem;margin-bottom:.7rem}
+  .card-top svg{color:var(--steel);flex:none}
+  .card-top h3{font-size:var(--t-lead)}
+  .card p{font-size:var(--t-body);color:var(--body)}
 
   /* Markets */
   .markets{display:flex;flex-wrap:wrap;gap:.8rem}
-  .market-tag{background:#fff;border:1px solid var(--line);border-radius:999px;padding:.65rem 1.3rem;font-weight:500;font-size:.96rem;color:var(--ink)}
+  .market-tag{background:#fff;border:1px solid var(--line);border-radius:999px;padding:.6rem 1.3rem;font-weight:500;font-size:var(--t-body);color:var(--ink)}
   .market-tag::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--accent);margin-right:.6rem;vertical-align:middle}
 
   /* Contact / Forms */
   .contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:3rem;align-items:start}
   .contact-info{background:var(--navy);color:#fff;border-radius:var(--radius);padding:2.6rem;position:sticky;top:100px}
-  .contact-info h3{color:#fff;font-size:1.4rem;margin-bottom:1.4rem}
+  .contact-info h3{color:#fff;margin-bottom:1.5rem}
   .contact-row{display:flex;gap:1rem;align-items:flex-start;margin-bottom:1.5rem}
   .contact-row .ci{width:42px;height:42px;border-radius:10px;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;flex:none;color:var(--accent-2)}
-  .contact-row b{display:block;color:#fff;font-weight:600;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.15rem}
-  .contact-row a,.contact-row span{color:#cfddea;font-size:1rem}
+  .contact-row b{display:block;color:#fff;font-weight:600;font-size:var(--t-label);text-transform:uppercase;letter-spacing:.07em;margin-bottom:.15rem}
+  .contact-row a,.contact-row span{color:#d5e1ec;font-size:var(--t-body)}
   .form-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
   .tabs{display:flex;border-bottom:1px solid var(--line)}
-  .tab{flex:1;padding:1.1rem 1rem;background:var(--bg-soft);border:0;cursor:pointer;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1rem;color:var(--muted);transition:.18s;border-bottom:3px solid transparent}
+  .tab{flex:1;padding:1.05rem 1rem;background:var(--bg-soft);border:0;cursor:pointer;font-family:'Archivo',sans-serif;font-weight:700;font-size:var(--t-body);color:var(--muted);transition:.18s;border-bottom:3px solid transparent}
   .tab.active{background:#fff;color:var(--ink);border-bottom-color:var(--accent)}
-  .tab small{display:block;font-family:'Inter',sans-serif;font-weight:400;font-size:.76rem;color:var(--muted);margin-top:.1rem}
+  .tab small{display:block;font-family:'IBM Plex Sans',sans-serif;font-weight:400;font-size:var(--t-label);color:var(--muted);margin-top:.1rem}
   .form-body{padding:2.2rem}
   .form-body.hidden{display:none}
   .field{margin-bottom:1.2rem}
-  .field label{display:block;font-size:.86rem;font-weight:600;color:var(--ink);margin-bottom:.4rem}
+  .field label{display:block;font-size:var(--t-label);font-weight:600;color:var(--ink);margin-bottom:.4rem}
   .field label .req{color:var(--accent)}
-  .field input,.field select,.field textarea{width:100%;padding:.8rem .95rem;border:1.5px solid var(--line);border-radius:9px;font-family:inherit;font-size:.97rem;color:var(--ink);background:#fff;transition:.15s}
-  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(43,127,192,.12)}
+  .field input,.field select,.field textarea{width:100%;padding:.8rem .95rem;border:1.5px solid var(--line);border-radius:9px;font-family:inherit;font-size:var(--t-body);color:var(--ink);background:#fff;transition:.15s}
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(21,81,127,.14)}
   .field textarea{resize:vertical;min-height:110px}
   .row-2{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
-  .form-note{font-size:.82rem;color:var(--muted);margin-top:.3rem}
+  .form-note{font-size:var(--t-label);color:var(--muted);margin-top:.6rem}
   .success{display:none;text-align:center;padding:1rem .5rem}
   .success.show{display:block}
-  .success .check{width:64px;height:64px;border-radius:50%;background:#e6f6ec;color:#1f9d55;display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem}
-  .success h3{font-size:1.4rem;margin-bottom:.5rem}
+  .success .check{width:64px;height:64px;border-radius:50%;background:#e6f6ec;color:#15803d;display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem}
+  .success h3{margin-bottom:.5rem}
 
   /* Footer */
-  footer{background:var(--navy);color:#aebfce;padding:64px 0 28px}
+  footer{background:var(--navy);color:#b7c6d4;padding:64px 0 28px}
   .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.1)}
-  .foot-grid h4{color:#fff;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.1rem}
-  .foot-grid a{display:block;color:#aebfce;padding:.3rem 0;font-size:.95rem;transition:.15s}
+  .foot-grid h4{color:#fff;font-size:var(--t-label);letter-spacing:.09em;text-transform:uppercase;margin-bottom:1.1rem}
+  .foot-grid a{display:block;color:#b7c6d4;padding:.3rem 0;font-size:var(--t-body);transition:.15s}
   .foot-grid a:hover{color:#fff}
-  .foot-brand p{font-size:.95rem;max-width:320px;margin-top:1rem}
-  .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;padding-top:1.8rem;font-size:.86rem;color:#7e93a6}
+  .foot-brand p{font-size:var(--t-body);max-width:330px;margin-top:1rem}
+  .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;padding-top:1.8rem;font-size:var(--t-label);color:#8ba0b3}
 
   @media(max-width:920px){
     .about-grid,.contact-grid{grid-template-columns:1fr;gap:2.2rem}
@@ -148,7 +154,6 @@
     .menu-btn{display:flex}
     .nav-links.open{display:flex;position:absolute;top:74px;left:0;right:0;flex-direction:column;background:#fff;padding:1.2rem 24px;gap:1.2rem;border-bottom:1px solid var(--line);box-shadow:var(--shadow)}
     .cards,.row-2{grid-template-columns:1fr}
-    .trust .wrap{grid-template-columns:1fr 1fr}
     section{padding:64px 0}
     .hero-inner{padding:64px 0 72px}
     .foot-grid{grid-template-columns:1fr}
@@ -162,7 +167,7 @@
   <div class="wrap nav">
     <a href="#top" class="brand">
       <span class="mark">BP</span>
-      <span>BP Mechanical<small>Commercial · Industrial</small></span>
+      <span>BP Mechanical</span>
     </a>
     <nav class="nav-links" id="navLinks">
       <a href="#about">About</a>
@@ -181,18 +186,19 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="top">
-  <div class="wrap hero-inner">
-    <div class="eyebrow">Mechanical Contractor · Gilbert, Arizona</div>
-    <h1>Mechanical systems built to a <span>higher standard.</span></h1>
-    <p class="lead">BP Mechanical, LLC is a woman-owned commercial and industrial mechanical contractor delivering HVAC, process piping, and preventive maintenance across Arizona — engineered, installed, and serviced by factory-certified technicians.</p>
-    <div class="hero-actions">
-      <a href="#contact" class="btn btn-primary">Request Service ›</a>
-      <a href="#bidders" class="btn btn-ghost">Invite Us to Bid</a>
-    </div>
-    <div class="hero-chips">
-      <span class="chip">✦ Licensed · ROC# 295114CR-39</span>
-      <span class="chip">✦ Woman-Owned Business</span>
-      <span class="chip">✦ Factory-Certified Technicians</span>
+  <div class="wrap">
+    <div class="hero-inner">
+      <h1>Mechanical systems for Arizona, built to a <span>higher standard.</span></h1>
+      <p class="lead">BP Mechanical, LLC is a woman-owned commercial and industrial mechanical contractor in Gilbert — delivering HVAC, process piping, and preventive maintenance engineered, installed, and serviced by factory-certified technicians.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-light">Request Service ›</a>
+        <a href="#bidders" class="btn btn-ghost">Invite Us to Bid</a>
+      </div>
+      <div class="hero-chips">
+        <span class="chip"><i></i> Licensed · ROC# 295114CR-39</span>
+        <span class="chip"><i></i> Woman-Owned Business</span>
+        <span class="chip"><i></i> Factory-Certified Technicians</span>
+      </div>
     </div>
   </div>
 </section>
@@ -202,8 +208,8 @@
   <div class="wrap">
     <div class="trust-item"><b>Licensed</b><span>ROC# 295114CR-39 (Commercial)</span></div>
     <div class="trust-item"><b>Any Size</b><span>Single units to full facilities</span></div>
-    <div class="trust-item"><b>Factory-Certified</b><span>Trained &amp; certified technicians</span></div>
-    <div class="trust-item"><b>Local</b><span>Gilbert, AZ &amp; surrounding valley</span></div>
+    <div class="trust-item"><b>Certified</b><span>Factory-trained technicians</span></div>
+    <div class="trust-item"><b>Local</b><span>Gilbert, AZ &amp; the valley</span></div>
   </div>
 </div>
 
@@ -211,7 +217,7 @@
 <section id="about">
   <div class="wrap about-grid">
     <div>
-      <div class="eyebrow">Who We Are</div>
+      <p class="eyebrow">Who We Are</p>
       <h2>A mechanical partner contractors trust to get it right.</h2>
       <p>BP Mechanical, LLC provides commercial and industrial mechanical contracting throughout the Phoenix valley. From new construction and retrofit to ongoing service, our team handles projects of every size with the same priority: do it correctly, do it safely, and stand behind the work.</p>
       <p>As a woman-owned business, we bring a hands-on, accountable approach that general contractors and facility owners count on — clear communication, dependable scheduling, and craftsmanship that holds up long after the job closes out.</p>
@@ -234,39 +240,33 @@
 <section id="services" class="alt">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">What We Do</div>
+      <p class="eyebrow">What We Do</p>
       <h2>Full-scope commercial &amp; industrial mechanical services</h2>
       <p>One accountable team across the lifecycle of your mechanical systems — design-assist and installation through long-term service.</p>
     </div>
     <div class="cards">
       <div class="card">
-        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M7 20h10M12 16v4"/></svg></div>
-        <h3>Commercial &amp; Industrial HVAC</h3>
+        <div class="card-top"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M7 20h10M12 16v4"/></svg><h3>Commercial &amp; Industrial HVAC</h3></div>
         <p>Installation, service, and repair of HVAC systems for commercial and industrial facilities of any size.</p>
       </div>
       <div class="card">
-        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-6h6v6"/></svg></div>
-        <h3>New Construction &amp; Retrofit</h3>
+        <div class="card-top"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-6h6v6"/></svg><h3>New Construction &amp; Retrofit</h3></div>
         <p>Ground-up mechanical builds and system retrofits, coordinated cleanly with your GC and trade partners.</p>
       </div>
       <div class="card">
-        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h10a4 4 0 014 4v6"/><circle cx="4" cy="7" r="2"/><path d="M18 17h2"/></svg></div>
-        <h3>Process Piping Fabrication</h3>
+        <div class="card-top"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h10a4 4 0 014 4v6"/><circle cx="4" cy="7" r="2"/><path d="M18 17h2"/></svg><h3>Process Piping Fabrication</h3></div>
         <p>Fabrication and installation of process piping built to spec and to code for demanding environments.</p>
       </div>
       <div class="card">
-        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/><circle cx="12" cy="12" r="4"/></svg></div>
-        <h3>Preventive Maintenance</h3>
+        <div class="card-top"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/><circle cx="12" cy="12" r="4"/></svg><h3>Preventive Maintenance</h3></div>
         <p>Scheduled maintenance agreements that maximize equipment life and protect against costly downtime.</p>
       </div>
       <div class="card">
-        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4a7 7 0 100 14 7 7 0 000-14zM21 21l-4.5-4.5"/></svg></div>
-        <h3>Service &amp; Diagnostics</h3>
+        <div class="card-top"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4a7 7 0 100 14 7 7 0 000-14zM21 21l-4.5-4.5"/></svg><h3>Service &amp; Diagnostics</h3></div>
         <p>Diagnostic checkups and responsive repairs that pinpoint issues and get systems back online fast.</p>
       </div>
       <div class="card">
-        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
-        <h3>Inspections &amp; Filter Service</h3>
+        <div class="card-top"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg><h3>Inspections &amp; Filter Service</h3></div>
         <p>Annual inspections, filter changes, and compliance checks that keep facilities running smoothly.</p>
       </div>
     </div>
@@ -277,7 +277,7 @@
 <section id="markets">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">Markets Served</div>
+      <p class="eyebrow">Markets Served</p>
       <h2>Built for the facilities that can't afford downtime</h2>
       <p>We support general contractors, developers, and facility owners across a range of commercial and industrial environments.</p>
     </div>
@@ -298,7 +298,7 @@
 <section id="contact" class="alt">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">Get in Touch</div>
+      <p class="eyebrow">Get in Touch</p>
       <h2>Let's talk about your project</h2>
       <p>Whether you need service on existing equipment or you're a general contractor inviting us to bid, we'll respond quickly.</p>
     </div>
@@ -413,7 +413,7 @@
       <div class="foot-brand">
         <a href="#top" class="brand" style="color:#fff">
           <span class="mark">BP</span>
-          <span style="color:#fff">BP Mechanical<small style="color:#8aa0b4">Commercial · Industrial</small></span>
+          <span style="color:#fff">BP Mechanical</span>
         </a>
         <p>Woman-owned commercial and industrial mechanical contractor serving Arizona. HVAC, process piping, and preventive maintenance by factory-certified technicians.</p>
       </div>
@@ -447,7 +447,7 @@
     a.addEventListener('click',function(){document.getElementById('navLinks').classList.remove('open');});
   });
 
-  // Tabs (and let the "Invite Us to Bid" hero/nav links open the bid tab)
+  // Tabs (and let the "Invite Us to Bid" links open the bid tab)
   function activateTab(which){
     document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.tab===which));
     document.getElementById('form-general').classList.toggle('hidden',which!=='general');
